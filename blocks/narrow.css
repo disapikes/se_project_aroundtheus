@@ -1,0 +1,65 @@
+@media screen and (max-width: 600px) {
+  .container {
+    min-height: 2812px;
+  }
+
+  .header {
+    padding-left: 8.43%;
+    height: 56px;
+    margin-top: 28px;
+  }
+
+  .header__name {
+    max-height: 24px;
+  }
+
+  .profile {
+    padding-top: 42px;
+    width: 282px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .profile__box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile__edit {
+    width: 55.5%;
+  }
+
+  .profile__name {
+    font-size: 22px;
+  }
+
+  .profile__role {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .edit__button {
+    padding: 0;
+  }
+
+  .add__button {
+    width: 100%;
+  }
+
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 36px;
+    margin: auto;
+    justify-items: center;
+  }
+
+  .footer {
+    padding-left: 8.43%;
+  }
+
+  .footer__copy {
+    font-size: 14px;
+  }
+}

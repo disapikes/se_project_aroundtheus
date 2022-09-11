@@ -1,0 +1,33 @@
+@import url("../fonts/Inter Web");
+@import url("../blocks/footer.css");
+@import url("../blocks/profile.css");
+@import url("../blocks/header.css");
+@import url("../blocks/content.css");
+@import url("../blocks/container.css");
+@import url("../blocks/narrow.css");
+@import url("../blocks/tablet.css");
+@import url("../blocks/tablet.css");
+@import url("../blocks/wide.css");
+@import url("../blocks/body.css");
+@import url("../blocks/html.css");
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
