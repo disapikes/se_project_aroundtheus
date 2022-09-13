@@ -43,7 +43,7 @@
   line-height: 1.21;
 }
 
-.edit__button {
+.profile__edit-button {
   border-radius: 2px;
   color: #ffffff;
   background-color: black;
@@ -54,7 +54,7 @@
   max-height: 22px;
 }
 
-.add__button {
+.profile__add-button {
   height: 50px;
   width: 150px;
   border-color: #ffffff;
@@ -62,7 +62,7 @@
   background-color: black;
 }
 
-.like__button {
+.card__like-button {
   background-color: #ffffff;
   border: none;
   padding: 0;
