@@ -1,26 +1,17 @@
 .profile {
   display: flex;
   flex-direction: row;
-  padding-top: 42px;
-
   justify-content: space-between;
-
   flex-wrap: wrap;
   align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .profile__box {
   display: flex;
 }
 
-.profile__info {
-  color: #ffffff;
-  width: 415px;
-  display: inline-flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 .profile__text {
   padding-top: 30px;
   padding-bottom: 36px;
@@ -30,7 +21,7 @@
 .profile__name {
   font-size: 2em;
   margin: 0;
-
+  padding-right: 18px;
   font-weight: 500;
   line-height: 0.92;
   display: inline;
@@ -44,9 +35,11 @@
 }
 
 .profile__edit-button {
-  border-radius: 2px;
-  color: #ffffff;
-  background-color: black;
+  border: 1px solid white;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  background: url("../images/Edit.svg") no-repeat center;
 }
 
 .profile__add {
@@ -57,13 +50,80 @@
 .profile__add-button {
   height: 50px;
   width: 150px;
-  border-color: #ffffff;
-  color: #ffffff;
-  background-color: black;
+  border: 2px solid white;
+  border-radius: 2px;
+  background-color: transparent;
+  background: url("../images/Add.svg") no-repeat center;
 }
 
-.card__like-button {
-  background-color: #ffffff;
-  border: none;
-  padding: 0;
+@media screen and (min-width: 901px) {
+  .profile__add-button:hover {
+    opacity: 60%;
+  }
+
+ 
+  .profile__edit-button:hover {
+    opacity: 60%;
+  }
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 601px) {
+   
+  .profile {
+    justify-content: space-evenly;
+    grid-column-start: 1;
+  grid-column-end: 3;
+  }
+  
+  .profile__text {
+    text-align: center;
+  } 
+  
+  .profile__add-button {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .profile {
+    padding-top: 42px;
+    width: 282px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    grid-column-start: 1;
+  grid-column-end: 2;
+  }
+
+  .profile__box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile__edit {
+    width: 55.5%;
+  }
+
+  .profile__name {
+    font-size: 22px;
+    padding-right: 10px;
+  }
+
+  .profile__role {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .profile__edit-button {
+    height: 18px;
+    width: 18px;
+    background-size: 7.5px;
+  }
+
+  .profile__add-button {
+    width: 100%;
+  }
 }
